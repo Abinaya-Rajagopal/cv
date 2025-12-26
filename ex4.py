@@ -1,5 +1,5 @@
 import cv2
-cap = cv2.VideoCapture(r"C:\Users\hp\Desktop\cv_prac\cv\WhatsApp Video 2025-12-26 at 6.53.22 PM.mp4")
+cap = cv2.VideoCapture(r"C:\Users\nagur\Desktop\cv lab\video.mp4")
 ret, frame = cap.read()
 tracker = cv2.legacy.TrackerKCF_create()
 bbox = cv2.selectROI("Select", frame, False)
@@ -24,7 +24,7 @@ cv2.destroyAllWindows()
 #MOSSE
 import cv2
 t = cv2.legacy.TrackerMOSSE_create()
-v = cv2.VideoCapture(r"C:\Users\hp\Desktop\cv_prac\cv\WhatsApp Video 2025-12-26 at 6.53.22 PM.mp4")
+v = cv2.VideoCapture(r"C:\Users\nagur\Desktop\cv lab\video.mp4")
 _, f = v.read()
 b = cv2.selectROI("Select", f)
 t.init(f, b)
